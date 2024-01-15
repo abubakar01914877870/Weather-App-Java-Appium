@@ -41,16 +41,18 @@ public class StepDefinitions {
     @Before
     public void doSomethingBefore() {
         UiAutomator2Options options = new UiAutomator2Options()
+                //.setUdid("VCQ47TS8RCPFOZLN")
                 .setUdid("emulator-5554")
+                .setAutoGrantPermissions(true)
                 .setApp("src/test/resources/apk/app-debug.apk");
         driver = new AndroidDriver(
                 // The default URL in Appium 1 is http://127.0.0.1:4723/wd/hub
                 service.getUrl(), options
         );
 
-        // Grant location permission
-        driver.findElement(AppiumBy.xpath("//android.view.View[@text='Allow']")).click();
-        driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']")).click();
+        // Grant location permission manually
+       // driver.findElement(AppiumBy.xpath("//android.view.View[@text='Allow']")).click();
+       // driver.findElement(AppiumBy.xpath("//android.widget.Button[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']")).click();
 
     }
 

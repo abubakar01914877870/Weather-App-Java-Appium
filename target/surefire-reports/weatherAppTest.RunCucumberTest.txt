@@ -1,4 +1,244 @@
 -------------------------------------------------------------------------------
 Test set: weatherAppTest.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 123.0 s -- in weatherAppTest.RunCucumberTest
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.119 s <<< FAILURE! -- in weatherAppTest.RunCucumberTest
+Weather Application Test.Verify the displays current weather forcast including temperature and conditions -- Time elapsed: 0.857 s <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Check https://github.com/appium/appium/issues/13802 for throubleshooting. Error executing adbExec. Original error: 'Command 'C:\\Users\\abuba\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s VCQ47TS8RCPFOZLN shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 255'; Command output: 
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+ 
+Host info: host: 'ACRA750', ip: '10.0.0.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:udid=VCQ47TS8RCPFOZLN, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=src/test/resources/apk/app-debug.apk}], desiredCapabilities=Capabilities {appium:app: src/test/resources/apk/app-..., appium:automationName: UIAutomator2, appium:udid: VCQ47TS8RCPFOZLN, platformName: ANDROID}}]
+Capabilities {appium:app: src/test/resources/apk/app-..., appium:automationName: UIAutomator2, appium:udid: VCQ47TS8RCPFOZLN, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+	at weatherAppTest.StepDefinitions.doSomethingBefore(StepDefinitions.java:48)
+
+Weather Application Test.Verify the weather forcasts for each hour including temperature and conditions. -- Time elapsed: 0.494 s <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Check https://github.com/appium/appium/issues/13802 for throubleshooting. Error executing adbExec. Original error: 'Command 'C:\\Users\\abuba\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s VCQ47TS8RCPFOZLN shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 255'; Command output: 
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+ 
+Host info: host: 'ACRA750', ip: '10.0.0.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:udid=VCQ47TS8RCPFOZLN, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=src/test/resources/apk/app-debug.apk}], desiredCapabilities=Capabilities {appium:app: src/test/resources/apk/app-..., appium:automationName: UIAutomator2, appium:udid: VCQ47TS8RCPFOZLN, platformName: ANDROID}}]
+Capabilities {appium:app: src/test/resources/apk/app-..., appium:automationName: UIAutomator2, appium:udid: VCQ47TS8RCPFOZLN, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+	at weatherAppTest.StepDefinitions.doSomethingBefore(StepDefinitions.java:48)
+
+Weather Application Test.Verify the weather app displays the weather forcast for the entire week. -- Time elapsed: 0.474 s <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Check https://github.com/appium/appium/issues/13802 for throubleshooting. Error executing adbExec. Original error: 'Command 'C:\\Users\\abuba\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s VCQ47TS8RCPFOZLN shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 255'; Command output: 
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+
+Exception occurred while executing 'delete':
+java.lang.SecurityException: Permission denial: writing to settings requires:android.permission.WRITE_SECURE_SETTINGS
+	at com.android.providers.settings.SettingsProvider.enforceWritePermission(SettingsProvider.java:2374)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1413)
+	at com.android.providers.settings.SettingsProvider.mutateGlobalSetting(SettingsProvider.java:1405)
+	at com.android.providers.settings.SettingsProvider.deleteGlobalSetting(SettingsProvider.java:1376)
+	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:561)
+	at android.content.ContentProvider.call(ContentProvider.java:2448)
+	at android.content.ContentProvider$Transport.call(ContentProvider.java:517)
+	at com.android.providers.settings.SettingsService$MyShellCommand.deleteForUser(SettingsService.java:399)
+	at com.android.providers.settings.SettingsService$MyShellCommand.onCommand(SettingsService.java:281)
+	at android.os.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:98)
+	at android.os.ShellCommand.exec(ShellCommand.java:44)
+	at com.android.providers.settings.SettingsService.onShellCommand(SettingsService.java:49)
+	at android.os.Binder.shellCommand(Binder.java:936)
+	at android.os.Binder.onTransact(Binder.java:820)
+	at android.os.Binder.execTransactInternal(Binder.java:1166)
+	at android.os.Binder.execTransact(Binder.java:1130)
+ 
+Host info: host: 'ACRA750', ip: '10.0.0.100'
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:udid=VCQ47TS8RCPFOZLN, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=src/test/resources/apk/app-debug.apk}], desiredCapabilities=Capabilities {appium:app: src/test/resources/apk/app-..., appium:automationName: UIAutomator2, appium:udid: VCQ47TS8RCPFOZLN, platformName: ANDROID}}]
+Capabilities {appium:app: src/test/resources/apk/app-..., appium:automationName: UIAutomator2, appium:udid: VCQ47TS8RCPFOZLN, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:177)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:238)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:109)
+	at weatherAppTest.StepDefinitions.doSomethingBefore(StepDefinitions.java:48)
+
